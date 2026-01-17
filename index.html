@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Li | CS & Neuroscience @ UChicago</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">W<span class="accent">.</span>L</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">
+                    <span class="name-line">William</span>
+                    <span class="name-line accent-gradient">Li</span>
+                </h1>
+                <div class="hero-tagline">
+                    <span class="tagline-static">Building at the intersection of</span>
+                    <span class="tagline-dynamic">
+                        <span class="rotating-text">AI & Healthcare</span>
+                    </span>
+                </div>
+                <p class="hero-description">
+                    Computer Science & Neuroscience student at UChicago,
+                    passionate about leveraging AI/ML to solve complex biomedical challenges.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <pre class="code-content"><code><span class="keyword">class</span> <span class="class-name">Developer</span> {
+  <span class="property">name</span> = <span class="string">"William Li"</span>;
+  <span class="property">skills</span> = [
+    <span class="string">"AI/ML"</span>,
+    <span class="string">"Full-Stack"</span>,
+    <span class="string">"Biomedical AI"</span>
+  ];
+
+  <span class="function">buildSomethingAmazing</span>() {
+    <span class="keyword">return</span> <span class="string">"🚀"</span>;
+  }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a junior at the <span class="highlight">University of Chicago</span> pursuing a dual degree
+                        in Computer Science and Neuroscience. My unique academic path allows me to bridge the gap
+                        between cutting-edge technology and biological understanding.
+                    </p>
+                    <p>
+                        Currently, I'm working as an <span class="highlight">AI/ML Developer Intern at XtalPi</span>,
+                        where I'm building multi-agent biomedical research assistants that automate paper search,
+                        clinical-trial summarization, and protein annotation workflows.
+                    </p>
+                    <p>
+                        I thrive on creating elegant solutions to complex problems, whether that's designing
+                        RESTful APIs, building interactive UIs, or developing sophisticated AI agents.
+                    </p>
+                    <div class="skills-container">
+                        <h3>Technologies I work with:</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Languages</h4>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>C/C++</li>
+                                    <li>Kotlin</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Frameworks</h4>
+                                <ul>
+                                    <li>Spring Boot</li>
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                    <li>PyTorch</li>
+                                    <li>LangChain</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools & Cloud</h4>
+                                <ul>
+                                    <li>AWS (RDS, ECR)</li>
+                                    <li>Docker</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Firebase</li>
+                                    <li>Git</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="stats-card">
+                        <div class="stat">
+                            <span class="stat-number">3.92</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">35%</span>
+                            <span class="stat-label">Hallucination Reduction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI/ML Developer Intern</h3>
+                            <span class="company">XtalPi, Inc. — BioMed AI</span>
+                            <span class="location">Beijing, China</span>
+                            <span class="date">Aug 2025 – Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built a multi-agent biomedical research assistant that automates paper search, Q&A, clinical-trial summarization, and protein/variant annotation end-to-end</li>
+                            <li>Designed a modular tool stack (RAG over PubMed/clinicaltrials.gov, NER, doc QA, variant + target lookup) with clean interfaces for rapid feature swaps</li>
+                            <li>Added protein sequence analysis hooks (FASTA ingest, structure/target metadata) and gene/variant annotation via public APIs</li>
+                            <li>Built evaluation harness with ground-truth sets, semantic matching, and hallucination checks — <span class="highlight">reduced hallucinations by ~35%</span></li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">Multi-Agent Systems</span>
+                            <span class="tag">NER</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Board Member & Incoming President</h3>
+                            <span class="company">In-Transcription, UChicago Chapter</span>
+                            <span class="location">Chicago, IL</span>
+                            <span class="date">Oct 2023 – Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Selected as 1 of 11 board members; planned and executed a speaker event, driving ~30 attendees</li>
+                            <li>Co-organized an intercollegiate Bio-Casing competition with Cornell and Columbia (logistics, outreach, judging)</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Event Planning</span>
+                            <span class="tag">Biotech</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1: Generative AI -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="project-icon">
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="url(#gradient1)" stroke-width="2"/>
+                                <path d="M35 50 L45 60 L65 40" fill="none" stroke="url(#gradient1)" stroke-width="3"/>
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#6366f1"/>
+                                        <stop offset="100%" style="stop-color:#8b5cf6"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-type">AI / Full-Stack</span>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Generative AI Q&A Agent</h3>
+                        <p class="project-description">
+                            A full-stack web-based AI agent for PDF document queries. Features an interactive
+                            conversational UI that enables users to upload and interact with PDF documents in real-time,
+                            powered by GPT-3.5 Turbo and LangChain.
+                        </p>
+                        <ul class="project-features">
+                            <li>Document loading, splitting, storage, and retrieval</li>
+                            <li>In-memory vector store for efficient embedding caching</li>
+                            <li>RESTful APIs optimized for high-performance handling</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Online Order -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="project-icon">
+                                <rect x="20" y="30" width="60" height="45" rx="5" fill="none" stroke="url(#gradient2)" stroke-width="2"/>
+                                <path d="M30 45 h40 M30 55 h30 M30 65 h20" stroke="url(#gradient2)" stroke-width="2"/>
+                                <defs>
+                                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#10b981"/>
+                                        <stop offset="100%" style="stop-color:#06b6d4"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-type">Full-Stack / Cloud</span>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Online Order</h3>
+                        <p class="project-description">
+                            A Spring Boot-based online food ordering web application with complete
+                            CRUD functionality, from registration to checkout, deployed on AWS.
+                        </p>
+                        <ul class="project-features">
+                            <li>Session-based auth with Spring Security</li>
+                            <li>PostgreSQL on AWS RDS</li>
+                            <li>Containerized deployment on AWS App Runner</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">React</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: MiniSpotify -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 100 100" class="project-icon">
+                                <circle cx="50" cy="50" r="35" fill="none" stroke="url(#gradient3)" stroke-width="2"/>
+                                <polygon points="42,35 42,65 68,50" fill="url(#gradient3)"/>
+                                <defs>
+                                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f59e0b"/>
+                                        <stop offset="100%" style="stop-color:#ef4444"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-type">Mobile / Android</span>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Code">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">MiniSpotify</h3>
+                        <p class="project-description">
+                            A personalized Spotify favorite management Android app built with modern
+                            Android development practices and Jetpack Compose.
+                        </p>
+                        <ul class="project-features">
+                            <li>MVVM architecture with Hilt DI</li>
+                            <li>Room Database for local caching</li>
+                            <li>Google ExoPlayer for music playback</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Jetpack Compose</span>
+                            <span class="tag">Room</span>
+                            <span class="tag">Retrofit</span>
+                            <span class="tag">ExoPlayer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Education
+            </h2>
+            <div class="education-card">
+                <div class="education-logo">
+                    <div class="university-crest">
+                        <span>UC</span>
+                    </div>
+                </div>
+                <div class="education-content">
+                    <h3>University of Chicago</h3>
+                    <p class="degree">Bachelor of Science in Computer Science</p>
+                    <p class="degree">Bachelor of Arts in Neuroscience</p>
+                    <p class="graduation">Expected June 2027</p>
+                    <div class="education-details">
+                        <div class="detail-item">
+                            <span class="detail-label">GPA</span>
+                            <span class="detail-value">3.92 / 4.00</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">ACT</span>
+                            <span class="detail-value">35 / 36</span>
+                        </div>
+                    </div>
+                    <div class="coursework">
+                        <h4>Relevant Coursework</h4>
+                        <div class="course-tags">
+                            <span class="course-tag">Systems Programming</span>
+                            <span class="course-tag">Discrete Mathematics</span>
+                            <span class="course-tag">Foundations of Neuroscience</span>
+                            <span class="course-tag">Cell and Molecular Biology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm currently looking for new opportunities and my inbox is always open.
+                    Whether you have a question, want to collaborate, or just want to say hi —
+                    I'll try my best to get back to you!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:williamli@uchicago.edu" class="btn btn-primary btn-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span>Say Hello</span>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:williamli@uchicago.edu" class="social-link" title="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                    <a href="tel:+17739495399" class="social-link" title="Phone">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by William Li</p>
+            <p class="footer-year">© 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
