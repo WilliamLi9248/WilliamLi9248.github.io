@@ -409,12 +409,12 @@ body {
 .profile-image-container {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
     aspect-ratio: 4/3;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
-    box-shadow: 0 25px 80px rgba(139, 92, 246, 0.3),
-                0 10px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.25),
+                0 8px 30px rgba(0, 0, 0, 0.3);
     transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
     transition: var(--transition-slow);
 }
@@ -980,8 +980,8 @@ body {
 }
 
 .university-logo {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     filter: brightness(0) invert(1);
     transition: var(--transition-normal);
@@ -989,6 +989,10 @@ body {
 
 .education-card:hover .university-logo {
     filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
+}
+
+.university-crest img + span {
+    display: none;
 }
 
 .education-content h3 {
