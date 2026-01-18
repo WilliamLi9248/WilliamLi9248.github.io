@@ -724,8 +724,8 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
     border-radius: 8px;
     transition: var(--transition-normal);
