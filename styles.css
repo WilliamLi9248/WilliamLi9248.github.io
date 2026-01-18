@@ -928,16 +928,35 @@ body {
     backdrop-filter: blur(20px);
 }
 
-.university-logo {
-    width: 100px;
-    height: auto;
+.uchicago-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.uchicago-shield {
+    width: 60px;
+    height: 60px;
     object-fit: contain;
-    filter: brightness(0) invert(1);
+    filter: invert(1) brightness(2);
     transition: var(--transition-normal);
 }
 
-.education-card:hover .university-logo {
-    filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
+.uchicago-text {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: 1px;
+}
+
+.education-card:hover .uchicago-shield {
+    filter: invert(1) brightness(2) drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
+}
+
+.education-card:hover .uchicago-text {
+    color: var(--accent-tertiary);
 }
 
 .education-content h3 {
