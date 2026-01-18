@@ -5,7 +5,30 @@
 document.addEventListener('DOMContentLoaded', () => {
     initLightbox();
     initLazyLoading();
+    initImageProtection();
 });
+
+// ==========================================
+// IMAGE PROTECTION - Disable Right-Click
+// ==========================================
+function initImageProtection() {
+    // Disable right-click on all images
+    document.addEventListener('contextmenu', (e) => {
+        if (e.target.tagName === 'IMG' || e.target.closest('.gallery-item') || e.target.closest('.lightbox')) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    // Disable drag on images
+    document.querySelectorAll('img').forEach(img => {
+        img.setAttribute('draggable', 'false');
+        img.addEventListener('dragstart', (e) => {
+            e.preventDefault();
+            return false;
+        });
+    });
+}
 
 // ==========================================
 // LIGHTBOX FUNCTIONALITY

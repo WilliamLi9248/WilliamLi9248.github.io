@@ -67,6 +67,18 @@
     background: #1a1a25;
 }
 
+/* Invisible overlay to prevent image dragging/saving */
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: transparent;
+}
+
 .gallery-item img {
     width: 100%;
     height: auto;
@@ -132,12 +144,31 @@
     justify-content: center;
 }
 
+.lightbox-content {
+    position: relative;
+}
+
 .lightbox-content img {
     max-width: 100%;
     max-height: 90vh;
     object-fit: contain;
     border-radius: 4px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+/* Invisible overlay for lightbox to prevent saving */
+.lightbox-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: transparent;
 }
 
 .lightbox-close {
