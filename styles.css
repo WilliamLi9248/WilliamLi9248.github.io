@@ -187,7 +187,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 20px 40px;
+    padding: clamp(12px, 2vw, 20px) clamp(16px, 4vw, 40px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,26 +198,24 @@ body {
 }
 
 .navbar.scrolled {
-    padding: 15px 40px;
+    padding: clamp(10px, 1.5vw, 15px) clamp(16px, 4vw, 40px);
     background: rgba(10, 10, 15, 0.95);
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: clamp(8px, 1.5vw, 12px);
     font-family: var(--font-primary);
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-weight: 700;
 }
 
 .nav-profile-img {
-    width: 36px;
-    height: 36px;
-    min-width: 36px;
-    max-width: 36px;
-    min-height: 36px;
-    max-height: 36px;
+    width: clamp(30px, 4vw, 40px);
+    height: clamp(30px, 4vw, 40px);
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent-primary);
@@ -241,17 +239,18 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: clamp(20px, 3vw, 40px);
     list-style: none;
 }
 
 .nav-link {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 1.2vw, 0.95rem);
     font-weight: 500;
     transition: var(--transition-fast);
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-link::after {
