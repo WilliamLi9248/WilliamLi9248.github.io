@@ -214,15 +214,21 @@ body {
 .nav-profile-img {
     width: 36px;
     height: 36px;
+    min-width: 36px;
+    max-width: 36px;
+    min-height: 36px;
+    max-height: 36px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent-primary);
     transition: var(--transition-normal);
+    flex-shrink: 0;
 }
 
 .nav-profile-img:hover {
     border-color: var(--accent-tertiary);
     box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+    transform: none;
 }
 
 .logo-text {
