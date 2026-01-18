@@ -928,23 +928,9 @@ body {
     backdrop-filter: blur(20px);
 }
 
-.university-crest {
-    width: 100px;
-    height: 100px;
-    background: var(--accent-gradient);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-primary);
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-}
-
 .university-logo {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: auto;
     object-fit: contain;
     filter: brightness(0) invert(1);
     transition: var(--transition-normal);
@@ -952,10 +938,6 @@ body {
 
 .education-card:hover .university-logo {
     filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
-}
-
-.university-crest img + span {
-    display: none;
 }
 
 .education-content h3 {
